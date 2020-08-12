@@ -26,8 +26,6 @@ class SeleniumBot:
         def __init__(self):
             driver = webdriver.Chrome("./chromedriver")
             driver.get("https://finance.daum.net/quotes/A045300")
-  
-
 
 class BotFinaceA(TelegramBot):
     def __init__(self):
