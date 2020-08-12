@@ -26,7 +26,7 @@ class SeleniumBot:
         def __init__(self):
             driver = webdriver.Chrome("./chromedriver")
             driver.get("https://finance.daum.net/quotes/A045300")
-        del 
+  
 
 
 class BotFinaceA(TelegramBot):
@@ -43,11 +43,3 @@ class BotFinaceA(TelegramBot):
         self.updater.start_polling()
         self.updater.idle()
 
-    def handler(self):
-        text = self.updater.message.text
-        chat_id = self.update.message.chat_id
-        self.send_message(chat_id=chat_id, text=text)
-      
-
-      echo_handler = MessageHandler(Filters.text, handler)
-      dispatcher.add_handler(echo_handler)
