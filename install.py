@@ -3,3 +3,6 @@
 # python -m pip install selenium - 
 # python -m pip install python-telegram-bot --upgrade
 # python -m pip install requests
+# python -m pip install emojize
+
+# python -m pip install 
