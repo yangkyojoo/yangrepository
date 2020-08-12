@@ -8,10 +8,9 @@ driver = webdriver.Chrome("./chromedriver")
 driver.get("https://finance.daum.net/quotes/A045300")
 
 
-
-stores = driver.find_elements_by_css_selector("span.numB")
-
-for s in stores:
-    print(s.find_element_by_css_selector("strong").text)
-    
-
+for n in range(1, 20):
+    # 지연시간주기
+    time.sleep(1)
+    stores = driver.find_elements_by_css_selector("span.numB")
+    how = stores[0].find_element_by_css_selector("strong").text
+    print(how)
